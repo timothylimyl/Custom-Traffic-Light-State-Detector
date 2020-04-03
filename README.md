@@ -50,6 +50,6 @@ After training the model, you will have frozen inference graph containing the en
 
 Red Light                  |  Green Light    | Yellow Light
 :-------------------------:|:-------------------------:|:-------------------------:
-![red](visualization/red.png)   | ![yellow](visualization/yellow.png) ) |  ![red](visualization/green.png
+![red](visualization/red.png)   | ![yellow](visualization/yellow.png) ) |  ![red](visualization/green.png)
 
 
