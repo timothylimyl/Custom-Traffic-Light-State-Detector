@@ -51,4 +51,4 @@ Click into the images for a clearer look:
 
 Red Light                  |  Yellow Light    | Green Light
 :-------------------------:|:-------------------------:|:-------------------------:
-![red](visualization/red.png)   | ![yellow](visualization/yellow.png) ) | ![green](visualization/green.png)
+![red](visualization/red.png)   | ![yellow](visualization/yellow.png) | ![green](visualization/green.png)
