@@ -47,6 +47,7 @@ After training the model, you will have frozen inference graph containing the en
 
 ## Samples results
 
+Click into the images for a clearer look:
 
 Red Light                  |  Green Light    | Yellow Light
 :-------------------------:|:-------------------------:|:-------------------------:
