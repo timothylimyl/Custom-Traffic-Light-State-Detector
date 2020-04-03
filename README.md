@@ -4,7 +4,7 @@ A custom object detection model was trained to detect the state of traffic light
 
 ## Sample Result:
 
-![result](visualization.gif)
+![result](visualization/visualization.gif)
 
 The object detection algorithm is running in the background ensuring that the car decelerates to a stop when a red light is detected within critical distance. This object detection model is trained using the Custom Object Detection API offered by TensorFlow.
 
@@ -27,7 +27,7 @@ To customized and train the object detection algorithm (implementation given at 
 
 2. **Label the images accordingly**. We have to annotate the dataset by putting bounding boxes for the object of interest. I used [labelImg](https://github.com/tzutalin/labelImg), a free to used and convenient image labeller. Example of manual labelling:
 
-![labelling](img/labelling_examples.PNG)
+![labelling](visualization/labelling_example.PNG)
 
 The labelImg application provides you with XML files for your labels. You can convert the XML files to csv using the script `xml_to_csv.py`. It output from the labelImg basically helps you relate each image file name to the coordinate of the bounding box and classication label. TensorFlow Object Detection API uses TFRecord files to keep track of the images and its label. Therefore, we will need to conver the csv files we have made into TFRecords through `generate_tfrecords.py`. Remember to edit lines `30-39` of `generate_tfrecords.py` to your own object labels.
 
@@ -41,10 +41,15 @@ The labelImg application provides you with XML files for your labels. You can co
 
 Personal experience with Colaboratory is that you have to supervise the training, clicking into it every 10-15 minutes sometimes to prevent runtime disconnection. Some days I do not experience runtime disconnection (unless you overload the limit provided - 12 hours). My models took 2.5 hours to trained with Colab GPU. 
 
-## Example results
+## Inference
+
+After training the model, you will have frozen inference graph containing the entire neural network model with all of its parameters. To run the inference, all you will need is the frozen trained model with the ssd model folder and the label_map.pbtxt. Check out `Traffic_LightState_Detector.ipynb` to learn how to run the inference and check the inference speed.
+
+## Samples results
 
 
-
-
+Red Light                  |  Green Light    | Yellow Light
+:-------------------------:|:-------------------------:|:-------------------------:
+![red](visualization/red.png)   | ![yellow](visualization/yellow.png) ) |  ![red](visualization/green.png
 
 
