@@ -49,8 +49,6 @@ After training the model, you will have frozen inference graph containing the en
 
 Click into the images for a clearer look:
 
-Red Light                  |  Green Light    | Yellow Light
+Red Light                  |  Yellow Light    | Green Light
 :-------------------------:|:-------------------------:|:-------------------------:
-![red](visualization/red.png)   | ![yellow](visualization/yellow.png) ) |  ![red](visualization/green.png)
-
-
+![red](visualization/red.png)   | ![yellow](visualization/yellow.png) ) | ![green](visualization/green.png)
