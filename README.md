@@ -1,6 +1,6 @@
 # Custom Traffic Light State Detector 
 
-A custom object detection model was trained to detect the state of traffic lights for the Self-Driving Capstone Nanodegree offered by Udacity. The goal of the detector is to allow a self driving car to detect the states of traffic lights and react accordingly. 
+A custom object detection model was trained to detect the state of traffic lights for the Udacity Self-Driving Capstone Project. The goal of the detector is to allow a self driving car to detect the states of traffic lights and react accordingly. 
 
 ## Sample Result:
 
