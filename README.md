@@ -41,7 +41,7 @@ This is very easy to make, just open notepad and copy my `training/label_map.pbt
 
 #### 4. **[Download the pretrained model](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md)** that you wish to use.
 
-In my case, I went with the `ssd_mobilenet_v2_coco` as I want it to run at least 30 FPS to given more time for the car to check and react.
+In my case, I went with the `ssd_mobilenet_v2_coco` as I want it to run at least 30 FPS to give the car more time for to check and react to the presence of traffic lights in front of it.
 
 #### 5. In this pretrained model file, **find the .config file and edit the configurations to suit your own system** (checkout `training/ssd_mobilenet_v2_coco.config`). 
 
