@@ -15,7 +15,7 @@ Tensorflow has provided a collection of detection models pre-trained on the COCO
 It is important to note that traffic lights is actually one of COCO object category. However, if we were to directly use this pre-trained COCO model, there will be a requirement to:
 
 1. Extract out the image of the traffic light based on bounding boxes given.
-2. Pass these the images of the traffic light into a classification network.
+2. Pass the images of the traffic light into a classification network.
 
 Therefore, it will be wiser to train the object detection algorithm to immediately distinguish the state of the traffic lights (red,green,yellow) in a single pass. This reduces the computational power required as there is no need for an add-on classifcation network. 
 
