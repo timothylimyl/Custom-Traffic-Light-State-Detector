@@ -6,7 +6,9 @@ A custom object detection model was trained to detect the state of traffic light
 
 ![result](visualization/visualization.gif)
 
-The object detection algorithm is running in the background ensuring that the car decelerates to a stop when a red light is detected within critical distance. This object detection model is trained using the Custom Object Detection API offered by TensorFlow.
+The object detection algorithm is running in the background ensuring that the car decelerates to a stop when a red light is detected within critical distance. This object detection model is trained using the Custom Object Detection API offered by TensorFlow. 
+
+[Full project repository](https://github.com/timothylimyl/CarND-Capstone)
 
 ## Tensorflow Model Detection Zoo
 
