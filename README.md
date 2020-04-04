@@ -23,13 +23,13 @@ Therefore, it will be wiser to train the object detection algorithm to immediate
 
 To customized and train the object detection algorithm (implementation given at `training_custom_object_detection.ipynb`):
 
-1. We will first need to **collect our own image dataset** to retrain the models given in the model detection zoo. In this case, simulation images of traffic light and traffic light images from udacity Carla was collected for training.
+1. We will first need to **collect our own image dataset** to retrain the models given in the model detection zoo. In this case, simulation images of traffic light and traffic light images from Carla (Udacity self driving car) was collected for training.
 
 2. **Label the images accordingly**. We have to annotate the dataset by putting bounding boxes for the object of interest. I used [labelImg](https://github.com/tzutalin/labelImg), a free to used and convenient image labeller. Example of manual labelling:
 
 ![labelling](visualization/labelling_example.PNG)
 
-The labelImg application provides you with XML files for your labels. You can convert the XML files to csv using the script `xml_to_csv.py`. It output from the labelImg basically helps you relate each image file name to the coordinate of the bounding box and classication label. TensorFlow Object Detection API uses TFRecord files to keep track of the images and its label. Therefore, we will need to conver the csv files we have made into TFRecords through `generate_tfrecords.py`. Remember to edit lines `30-39` of `generate_tfrecords.py` to your own object labels.
+The labelImg application provides you with XML files for your labels. You can convert the XML files to csv using the script `extra_scripts/xml_to_csv.py`. It output from the labelImg basically helps you relate each image file name to the coordinate of the bounding box and classication label. TensorFlow Object Detection API uses TFRecord files to keep track of the images and its label. Therefore, we will need to conver the csv files we have made into TFRecords through `extra_scripts/generate_tfrecords.py`. Remember to edit lines `30-39` of `extra_scripts/generate_tfrecords.py` to your own object labels.
 
 3. TensorFlow requires **a label map file in the form of .pbtxt**. This is very easy to make, just open notepad and copy my `training/label_map.pbtxt` file. Edit it according to your own object categories.
 
